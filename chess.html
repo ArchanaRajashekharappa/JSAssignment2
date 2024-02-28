@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        #board{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .row{
+            display: flex;
+        }
+        .cell{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="board">
+
+    </div>
+</body>
+<script>
+   let board=document.getElementById("board")
+   for(let i=0;i<8;i++){
+      let row=document.createElement("div")
+      row.className="row"
+      for(let j=1;j<8;j++){
+        let cell=document.createElement("div")
+        cell.className="cell"
+        if(i%2===0){
+            if(j%2===0){
+                cell.style.backgroundColor="black";
+            } else {
+                cell.style.backgroundColor="white"
+            }
+           
+        } else{
+            if(j%2===0){
+                cell.style.backgroundColor="white"
+            } else{
+                cell.style.backgroundColor="black"
+            }
+        }
+           row.append(cell)
+      }
+      board.append(row)
+   }
+
+</script>
+</html>
