@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <h2>Todo List</h2>
+    <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Add a new todo">
+        <button type="button" id="addButton">Add</button>
+    </form>
+    <ul id="todoList"></ul>
+
+    <script>
+        let todoInput = document.getElementById('todoInput');
+        let todoList = document.getElementById('todoList');
+        let addButton = document.getElementById('addButton');
+
+        addButton.addEventListener('click', () => {
+            let todoText = todoInput.value.trim();
+            todoInput.value = '';
+            if (todoText !== '') {
+                let li = document.createElement('li');
+                li.textContent = todoText;
+
+                let deleteBtn = document.createElement('button');
+                deleteBtn.textContent = 'Delete';
+                deleteBtn.addEventListener('click', function() {
+                    li.remove();
+                });
+
+                let editBtn = document.createElement('button');
+                editBtn.textContent = 'Edit'; 
+                editBtn.addEventListener('click', () => {
+                    let newText = prompt('Edit todo', li.textContent);
+                    if (newText !== null && newText.trim() !== '') {
+                        li.textContent = newText.trim();
+                    }
+                });
+
+                li.appendChild(editBtn); 
+                li.appendChild(deleteBtn);
+                todoList.appendChild(li);
+             
+            }
+        });
+    </script>
+</body>
+</html>

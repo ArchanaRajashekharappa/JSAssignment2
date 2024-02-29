@@ -1,6 +1,6 @@
 
 
-     //add
+     //add  the number
 // function add(a,b){
 //       return a+b
 // }
@@ -9,7 +9,7 @@
 
 
 
-       //even and odd
+       //even and odd  **************************************************************************************
 // function evenodd(number){
 //    if(number%2===0){
 //     return "even"
@@ -19,8 +19,8 @@
 // }
 // console.log(`${evenodd(12)}`)
 
-
-
+// using promt finding the even and odd number *******************************************************************
+    
 // let input=prompt("enter a number")
 // let number=parseInt(input)
 // function evenOdd(number){
@@ -34,7 +34,7 @@
 // console.log(`{result}`);
 
 
-    // square number
+    // square number       ****************************************************************************
 
 // function square(number){
 //     return number*number*number
@@ -42,7 +42,7 @@
 // let result=(`${square(6)}`)
 // console.log(result);
 
-       //concat two number
+       //concat two number   **********************************************************************************
 
 // function concat(str,str2){
 //       return str+str2
@@ -51,7 +51,7 @@
 //  console.log(result);
 
 
-                  //reverse   
+                  //reverse      *********************************************************************************
 //     function reverse(str) {
 //   return str.split("").reverse().join("");
 //   }
@@ -59,7 +59,7 @@
 //   let reversedString = reverse(firstString);
 //   console.log(reversedString); 
   
-               //factorial
+               //factorial   ********************************************************************************************
 // function fact(n){
 //     if(n==0){
 //         return 1
@@ -70,14 +70,14 @@
 // let number=5
 // console.log(`${fact(number)}`)
 
-        //max &min
+        //max &min              ***********************************************************************************************
 // function max(num1,num2){
 //   return Math.max(num1,num2)
 // }
 // let result=max(23,566)
 // console.log(result);
    
-       // greet person
+       // greet person    *********************************************************************************************************
 
 // function greetPerson(name){
 //    return `hello,${name}`
@@ -85,7 +85,7 @@
 // let result=greetPerson("Archana")
 // console.log(result);
          
-         //aversge
+         //aversge      ****************************************************************************************************************
 // let array=[1,2,3,4,5]
 // let average=(array)=>{
 //     let sum=array.reduce((total,cur)=>total+cur)
