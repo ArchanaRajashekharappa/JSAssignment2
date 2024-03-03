@@ -1,0 +1,91 @@
+<!-- 5.Interactive Card Grid:
+Create an interactive card grid using CSS Grid for the overall layout.
+Apply Flexbox to structure content within individual cards, allowing for dynamic content of varying lengths.
+Implement hover effects or animations for a visually engaging experience -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Card Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        .card-content {
+            flex: 1;
+        }
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            margin-bottom: 10px;
+        }
+        .card-link {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .card-link:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid">
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">Card Title 1</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit ipsum sed ultrices scelerisque.</div>
+        </div>
+        <a href="#" class="card-link">Read More</a>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">Card Title 2</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit ipsum sed ultrices scelerisque. Nullam id pulvinar est.</div>
+        </div>
+        <a href="#" class="card-link">Read More</a>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="card-title">Card Title 3</div>
+            <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit ipsum sed ultrices scelerisque. Nullam id pulvinar est. Vivamus bibendum tincidunt felis, vel tristique elit accumsan non.</div>
+        </div>
+        <a href="#" class="card-link">Read More</a>
+    </div>
+
+</div>
+
+</body>
+</html>

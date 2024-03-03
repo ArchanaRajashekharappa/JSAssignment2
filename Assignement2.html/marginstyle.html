@@ -1,0 +1,75 @@
+<!-- 1. Magazine-style Blog Layout:
+Develop a magazine-style blog layout using CSS Grid for the main structure.
+Implement Flexbox to handle the layout of articles and sections within the grid.
+Focus on creating an aesthetically pleasing and readable design.
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine-style Blog Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .article h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .article p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="article">
+        <img src="./images/article1.jpg" alt="Article 1 Image">
+        <h2>Article Title 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit ipsum sed ultrices scelerisque.</p>
+        <a href="#">Read More</a>
+    </div>
+    <div class="article">
+        <img src="./images/article2.jpg" alt="Article 2 Image">
+        <h2>Article Title 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit ipsum sed ultrices scelerisque.</p>
+        <a href="#">Read More</a>
+    </div>
+    <div class="article">
+        <img src="./images/article3.jpg" alt="Article 3 Image">
+        <h2>Article Title 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit ipsum sed ultrices scelerisque.</p>
+        <a href="#">Read More</a>
+    </div>
+
+</div>
+
+</body>
+</html>
